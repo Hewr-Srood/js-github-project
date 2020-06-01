@@ -7,7 +7,59 @@
 #github-container {
   display: flex;
 }
+body{
+  background: Linear-gradient(to right,#46f7bb,#d3fbfa);
+  background-repeat: no-repeat;
+}
 
 ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  margin: 3rem;
+}
+#user-list li{
+ display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+li:hover{
+  transform: scale(1.05);
+}
+#user-list li a{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 1rem;
+  color: black;
+}
+#user-listl li img{
+  border-radius: 30px;
+}
+#user-list li button{
+  font-size: 1rem;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 30px;
+  height: 100px;
+  background: transparent;
+  transition: all .6s;
+  cursor: pointer;
+}
+
+button:hover{
+  border-top: none;
+  background: rgba(0, 0, 0, 0.2);
 }
